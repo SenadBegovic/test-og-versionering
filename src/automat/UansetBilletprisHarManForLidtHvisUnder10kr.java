@@ -27,7 +27,7 @@ public class UansetBilletprisHarManForLidtHvisUnder10kr
 		if (antalFejl == 0) {
 			System.out.println("Automaten er fejlfri, HURRA!!!");
 		} else {
-			System.out.println("Automaten har fejl, Ã˜V!!!");                      
+			System.out.println("Automaten har fejl, ØV!!!");                      
 		}
 	}
 }
