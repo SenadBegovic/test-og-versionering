@@ -11,7 +11,7 @@ public class ManSkalLoggeIndForAtAendreBilletprisen {
 		automat.setBilletpris(20);
 		retur = automat.getBilletpris();
 		if (retur == 20){
-			System.out.println("Billetprisen skulle ikke kunne Ã¦ndres, hvis man ikke er logget ind. Prisen skulle derfor vÃ¦re 10, men er: " + retur);
+			System.out.println("Billetprisen skulle ikke kunne Ændres, hvis man ikke er logget ind. Prisen skulle derfor være 10, men er: " + retur);
 			antalFejl++;
 		}
 		
