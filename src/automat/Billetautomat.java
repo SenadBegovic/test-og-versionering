@@ -103,7 +103,11 @@ public class Billetautomat {
 	}
 
 	public void setBilletpris(int billetpris) {
-		this.billetpris = billetpris;
+		if(montørtilstand){
+			this.billetpris = billetpris;
+		} else {
+			System.out.println("Afvist - log ind først");
+		}
 	}
 
 	public void nulstil() {
