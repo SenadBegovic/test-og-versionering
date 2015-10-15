@@ -104,7 +104,11 @@ public class Billetautomat {
 
 	public void setBilletpris(int billetpris) {
 		if(montørtilstand){
-			this.billetpris = billetpris;
+			if(billetpris > 0){
+				this.billetpris = billetpris;
+			}else{
+				System.out.println("Billetprisen kan ikke være 0 eller under!");
+			}
 		} else {
 			System.out.println("Afvist - log ind først");
 		}
