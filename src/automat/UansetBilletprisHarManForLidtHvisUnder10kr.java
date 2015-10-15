@@ -12,7 +12,8 @@ public class UansetBilletprisHarManForLidtHvisUnder10kr
 
 
 		System.out.println("*** Tjek at den udskriver sætningen \"Du mangler at indbetale nogle penge\" selvom man har nok");
-		automat.setBilletpris(5);
+		automat.montørLogin("1234");
+		automat.setBilletpris(6);
 		automat.indsætPenge(5);
 		automat.udskrivBillet();
 		
