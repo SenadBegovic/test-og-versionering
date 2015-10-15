@@ -13,11 +13,11 @@ public class UansetBilletprisHarManForLidtHvisUnder10kr
 
 		System.out.println("*** Tjek at den udskriver sætningen \"Du mangler at indbetale nogle penge\" selvom man har nok");
 		automat.montørLogin("1234");
-		automat.setBilletpris(6);
+		automat.setBilletpris(5);
 		automat.indsætPenge(5);
 		automat.udskrivBillet();
 		
-		if (automat.getBilletpris() > automat.getBalance()){
+		if (automat.getBilletpris() < automat.getBalance()){
 			System.out.println("FEJL, den udskrev sætningen, selvom balancen og prisen var i orden ");
 			antalFejl =antalFejl+1;
 		}
