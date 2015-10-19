@@ -63,4 +63,15 @@ public class JUnitTest {
 		int retur = automat.returpenge();
 		assertEquals(9, retur);
 	}
+	
+	@Test
+	public void testBilletpris(){
+		Billetautomat automat = new Billetautomat();
+		automat.montørLogin("1234");
+		automat.setBilletpris(5);
+		automat.indsætPenge(5);
+		automat.udskrivBillet();
+		int retur = automat.returpenge();
+		assertEquals(0, retur);
+	}
 }
