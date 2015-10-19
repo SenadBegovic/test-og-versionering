@@ -44,4 +44,14 @@ public class JUnitTest {
 		int retur = automat.getBalance();
 		assertEquals(0, retur);
 	}
+	
+	@Test
+	public void testNulstil(){
+		Billetautomat automat = new Billetautomat();
+		automat.montørLogin("1234");
+		automat.setBilletpris(30);
+		automat.nulstil();
+		int retur = automat.getBilletpris();
+		assertEquals(10, retur);
+	}
 }
