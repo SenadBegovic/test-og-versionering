@@ -27,4 +27,12 @@ public class JUnitTest {
 		assertEquals(20, retur);
 	}
 
+	@Test
+	public void testSetNegativpris(){
+		Billetautomat automat = new Billetautomat();
+		automat.montørLogin("1234");
+		automat.setBilletpris(-10);
+		int retur = automat.getBilletpris();
+		assertEquals(10, retur);
+	}
 }
