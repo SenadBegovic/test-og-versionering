@@ -35,4 +35,13 @@ public class JUnitTest {
 		int retur = automat.getBilletpris();
 		assertEquals(10, retur);
 	}
+	
+	@Test
+	public void testSetNegativBalance(){
+		Billetautomat automat = new Billetautomat();
+		automat.indsætPenge(-10);
+		automat.udskrivBillet();
+		int retur = automat.getBalance();
+		assertEquals(0, retur);
+	}
 }
